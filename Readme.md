@@ -24,7 +24,7 @@ create a directory called "project-name" <br/>
 inside that, create another directory called "project-name" <br/>
 use the cd command to move into the "project-name" directory
 
-
+## Listing Git Commands
 #### Git Init
 Use the **git init** command to create a new, empty repository in the current directory.
 ```
@@ -43,4 +43,15 @@ This command:
 * by default will create a directory with the same name as the repository that's being cloned
 * can be given a second argument that will be used as the name of the directory
 * will create the new repository inside of the current working directory
+
+
+#### Git status 
+The **git status**  command will display the current status of the repository.
+```
+$ git clone https://github.com/udacity/course-git-blog-project
+```
+This command:
+* tell us about new files that have been created in the Working Directory that Git hasn't started tracking, yet
+* files that Git is tracking that have been modified
+* a whole bunch of other things that we'll be learning about throughout the rest of the course ;-)
 
