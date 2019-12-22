@@ -23,6 +23,10 @@ ___Strong emphasized text___ or ***Strong emphasized text*** <br/>
  Content Cell  | Content Cell
  Content Cell  | Content Cell
  
+ <br>
+ <br>
+ <br>
+ 
 ```
 var testCode = 
     {
@@ -72,11 +76,11 @@ var testCode =
 <br>
 
 ```
--[ ] An uncompleted task<br/>
--[x] A completed task
+- [ ] An uncompleted task<br/>
+- [x] A completed task
 ```
--[ ] An uncompleted task<br/>
--[x] A completed task
+- [ ] An uncompleted task<br/>
+- [x] A completed task
 <br>
 <br>
 <br>
@@ -111,9 +115,15 @@ var testCode =
 <h3>HTML</h3>
 <p> Some HTML code here </p>
 ```
+<br>
+<br>
+<br>
 <h3>HTML</h3>
 <p> Some HTML code here </p>
 
+<br>
+<br>
+<br>
 ``` 
 <kbd>⌘F</kbd> <kbd>⌃</kbd> <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>⇪</kbd> <kbd>↩</kbd> <kbd>⌫↩</kbd>
 ```
