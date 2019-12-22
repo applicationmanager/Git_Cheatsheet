@@ -61,7 +61,8 @@ ___Strong emphasized text___ or ***Strong emphasized text*** <br/>
  ```
 [Named Link](http://www.google.fr/ "Named link title") and http://www.google.fr/ or <http://example.com/>
 ```
- [Named Link](http://www.google.fr/ "Named link title") and http://www.google.fr/ or <http://example.com/>
+ [Go To Google](http://www.google.com/ "hover link description") 
+ [heading-2](#heading-2 "Goto heading-2")<br/>
  [heading-1](#heading-1 "Goto heading-1")<br/>
  <br>
  <br>
