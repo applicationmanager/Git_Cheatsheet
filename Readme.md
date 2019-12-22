@@ -56,11 +56,21 @@ This command:
 * a whole bunch of other things that we'll be learning about throughout the rest of the course ;-)
 
 
-####    Git log 
-The **____**  _____.<kbd>⌘F</kbd>
+#### Git log 
+The **git log**  _____
 ```
-$ git ______
+$ git log
 ```
+
+<details>
+    <summary>Navigating The Log</summary>
+    <p>
+    to scroll down, press
+       <kbd>j</kbd> or <kbd>↓</kbd> to move down one line at a time
+       <kbd>d</kbd> to move by half the page screen
+       <kbd>f</kbd> to move by a whole page screen
+       </p>
+</details>
 This command:
 * _____
 * _____
@@ -73,57 +83,3 @@ $ git ______
 This command:
 * _____
 * _____
-<details>
-           <summary>Title 1</summary>
-           <p>Content 1 Content 1 Content 1 Content 1 Content 1</p>
-         </details>
-         ![picture alt](http://via.placeholder.com/200x150 "Title is optional")
-         
-- [ ] An uncompleted task
-          - [x] A completed task
-          
-* Bullet list
-    * Nested bullet
-        * Sub-nested bullet etc
-* Bullet list item 2
-
-1. A numbered list
-    1. A nested numbered list
-    2. Which is numbered
-2. Which is numbered
-
-> Blockquote
->> Nested Blockquote
-
-`code() adsf adsf`
-```
-var specificLanguage_code = 
-    {
-        "data": {
-            "lookedUpPlatform": 1,
-            "query": "Kasabian+Test+Transmission",
-            "lookedUpItem": {
-                "name": "Test Transmission",
-                "artist": "Kasabian",
-                "album": "Kasabian",
-                "picture": null,
-                "link": "http://open.spotify.com/track/5jhJur5n4fasblLSCOcrTp"
-            }
-        }
-    }
-```
-
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
-
-<kbd>⌘F</kbd>
-<kbd>⌥</kbd>
-<kbd>↩</kbd>
-<kbd>⇥</kbd>
-<kbd>⌃</kbd>
-<kbd>⇧</kbd>
-<kbd>⇪</kbd>
-<kbd>⌫</kbd>
-
