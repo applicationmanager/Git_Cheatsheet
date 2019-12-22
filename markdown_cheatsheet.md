@@ -1,11 +1,66 @@
+
+
+ <br>
+ 
+ ```
 # Heading 1 #
+```
+# Heading 1 #
+
+ <br>
+ 
+ ```
 ## Heading 2 ##
+```
+## Heading 2 ##
+
+ <br>
+ 
+ ```
 ### Heading 3 ###
+```
+### Heading 3 ###
+
+ <br>
+ 
+ ```
 #### Heading 4 ####
+```
+#### Heading 4 ####
+
+ <br>
+ 
+ ```
+_Emphasized text_ or *Emphasized text* 
+```
 _Emphasized text_ or *Emphasized text* <br/>
+
+ <br>
+ 
+ ```
+__Strong text__ or **Strong text**
+```
 __Strong text__ or **Strong text** <br/>
+
+ <br>
+ 
+ ```
+___Strong emphasized text___ or ***Strong emphasized text***
+```
 ___Strong emphasized text___ or ***Strong emphasized text*** <br/>
+
+ <br>
+ 
+ ```
+ ~~Strikethrough text~~
+```
  ~~Strikethrough text~~ <br/>
+ 
+ <br>
+ 
+ ```
+[Named Link](http://www.google.fr/ "Named link title") and http://www.google.fr/ or <http://example.com/>
+```
  [Named Link](http://www.google.fr/ "Named link title") and http://www.google.fr/ or <http://example.com/>
  [heading-1](#heading-1 "Goto heading-1")<br/>
  <br>
@@ -115,9 +170,6 @@ var testCode =
 <h3>HTML</h3>
 <p> Some HTML code here </p>
 ```
-<br>
-<br>
-<br>
 <h3>HTML</h3>
 <p> Some HTML code here </p>
 
