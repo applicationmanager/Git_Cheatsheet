@@ -65,11 +65,18 @@ $ git log
 <details>
     <summary>Navigating The Log</summary>
     <p>
-    to scroll down, press
-       <kbd>j</kbd> or <kbd>↓</kbd> to move down one line at a time
-       <kbd>d</kbd> to move by half the page screen
-       <kbd>f</kbd> to move by a whole page screen
-       </p>
+    <ui>to scroll down, press
+       <ul><kbd>j</kbd> or <kbd>↓</kbd> to move down one line at a time</ul>
+       <ul><kbd>d</kbd> to move by half the page screen</ul>
+       <ul><kbd>f</kbd> to move by a whole page screen</ul>
+    </ui> 
+    <ui>to scroll up, press
+       <ul><kbd>k</kbd> or <kbd>↑</kbd> to move _up_ one line at a time</ul>
+       <ul><kbd>u</kbd> to move by half the page screen</ul>
+       <ul><kbd>b</kbd> to move by a whole page screen</ul>
+    </ui> 
+    press <kbd>q</kbd> to quit out of the log (returns to the regular command prompt)
+    </p>
 </details>
 This command:
 * _____
