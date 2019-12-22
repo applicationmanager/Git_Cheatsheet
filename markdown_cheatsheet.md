@@ -41,6 +41,12 @@ _Emphasized text_ or *Emphasized text* <br/>
 __Strong text__ or **Strong text**
 ```
 __Strong text__ or **Strong text** <br/>
+<br>
+ 
+ ```
+# Heading 3 #
+```
+# Heading 3 #
 
  <br>
  
@@ -59,9 +65,11 @@ ___Strong emphasized text___ or ***Strong emphasized text*** <br/>
  <br>
  
  ```
-[Named Link](http://www.google.fr/ "Named link title") and http://www.google.fr/ or <http://example.com/>
+[Go To Google](http://www.google.com/ "hover link description")
+[heading-2](#heading-2 "Goto heading-2")
+[heading-1](#heading-1 "Goto heading-1")
 ```
- [Go To Google](http://www.google.com/ "hover link description") 
+ [Go To Google](http://www.google.com/ "hover link description") <br/>
  [heading-2](#heading-2 "Goto heading-2")<br/>
  [heading-1](#heading-1 "Goto heading-1")<br/>
  <br>
