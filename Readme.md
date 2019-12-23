@@ -91,7 +91,8 @@ This command:
 * lists one commit per line
 * shows the first 7 characters of the commit's SHA
 * shows the commit's message
-* _____
+
+**the** <key>q</key> **key gets out of the git log view**. We're still using git log but are just passing a flag to change how the information is displayed. So the q key still works and returns the terminal to the command prompt.
 
 
 
