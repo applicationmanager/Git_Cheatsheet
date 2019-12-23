@@ -78,8 +78,9 @@ $ git log
         press <kbd>q</kbd> to quit out of the log (returns to the regular command prompt)
     </p>
 </details>
+
 This command:
-* **the SHA** - display the complete SHA for every single commit. Each SHA is unique.
+* **the SHA**  - display the complete SHA for every single commit. Each SHA is unique.
 * **the author** - output displays the commit author for every single commit! It could be different for other repositories that have multiple people collaborating together
 * **the date** - will display the date for each commit
 * **the commit message** - this is one of the most important parts of a commit message...we usually always want to see this
