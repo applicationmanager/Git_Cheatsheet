@@ -57,7 +57,7 @@ This command:
 
 
 #### Git log 
-The **git log**  _____
+The **git log**  By default, this command displays:the SHA, author, date and message of every commit in the repository
 ```
 $ git log
 ```
@@ -65,19 +65,41 @@ $ git log
 <details>
     <summary>Navigating The Log</summary>
     <p>
-    <ui>to scroll down, press
-       <ul><kbd>j</kbd> or <kbd>↓</kbd> to move down one line at a time</ul>
-       <ul><kbd>d</kbd> to move by half the page screen</ul>
-       <ul><kbd>f</kbd> to move by a whole page screen</ul>
-    </ui> 
-    <ui>to scroll up, press
-       <ul><kbd>k</kbd> or <kbd>↑</kbd> to move _up_ one line at a time</ul>
-       <ul><kbd>u</kbd> to move by half the page screen</ul>
-       <ul><kbd>b</kbd> to move by a whole page screen</ul>
-    </ui> 
-    press <kbd>q</kbd> to quit out of the log (returns to the regular command prompt)
+        <ui>to scroll down, press
+           <ul><kbd>j</kbd> or <kbd>↓</kbd> to move down one line at a time</ul>
+           <ul><kbd>d</kbd> to move by half the page screen</ul>
+           <ul><kbd>f</kbd> to move by a whole page screen</ul>
+        </ui> 
+        <ui>to scroll up, press
+           <ul><kbd>k</kbd> or <kbd>↑</kbd> to move _up_ one line at a time</ul>
+           <ul><kbd>u</kbd> to move by half the page screen</ul>
+           <ul><kbd>b</kbd> to move by a whole page screen</ul>
+        </ui> 
+        press <kbd>q</kbd> to quit out of the log (returns to the regular command prompt)
     </p>
 </details>
+This command:
+* **the SHA** - display the complete SHA for every single commit. Each SHA is unique.
+* **the author** - output displays the commit author for every single commit! It could be different for other repositories that have multiple people collaborating together
+* **the date** - will display the date for each commit
+* **the commit message** - this is one of the most important parts of a commit message...we usually always want to see this
+
+```
+$ git log --oneline
+```
+This command:
+* lists one commit per line
+* shows the first 7 characters of the commit's SHA
+* shows the commit's message
+* _____
+
+
+
+#### Git ______ 
+The **____**  _____.
+```
+$ git ______
+```
 This command:
 * _____
 * _____
