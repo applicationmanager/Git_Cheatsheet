@@ -178,8 +178,9 @@ var testCode =
 <br>
 <br>
 <br>
+
 ``` 
-<kbd>⌘F</kbd> <kbd>⌃</kbd> <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>⇪</kbd> <kbd>↩</kbd> <kbd>⌫↩</kbd>
+<kbd>⌘F</kbd> <kbd>⌃</kbd> <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>⇪</kbd> <kbd>↩</kbd> <kbd>⌫</kbd>
 ```
 <kbd>⌘F</kbd>
 <kbd>⌃</kbd>
@@ -187,4 +188,4 @@ var testCode =
 <kbd>⇧</kbd>
 <kbd>⇪</kbd>
 <kbd>↩</kbd>
-<kbd>⌫↩</kbd>
+<kbd>⌫</kbd>
