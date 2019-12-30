@@ -35,7 +35,7 @@ Running this command creates a hidden .git directory. This .git directory is the
 #### Git Clone 
 The **git clone** command is used to create an identical copy of an existing repository.
 ```
-$ git clone https://github.com/udacity/course-git-blog-project
+$ git clone https://github.com/applicationmanager/Git_Cheatsheet.git
 ```
 This command:
 
@@ -48,7 +48,7 @@ This command:
 #### Git status 
 The **git status**  command will display the current status of the repository.
 ```
-$ git clone https://github.com/udacity/course-git-blog-project
+$ git status
 ```
 This command:
 * tell us about new files that have been created in the Working Directory that Git hasn't started tracking, yet
@@ -104,6 +104,24 @@ This command:
 * displays the number of lines that have been added/removed
 * displays a summary line with the total number of modified files and lines that have been added/removed
 
+
+```
+$ git log -p
+$ git log --patch
+```
+This command:
+* displays the files that have been modified
+* displays the location of the lines that have been added/removed
+* displays the actual changes that have been made
+* That's right! *git log -p -w* will show the patch information, but will not highlight lines where only whitespace changes have occurred.
+
+
+```
+$ git log -p fdf5493
+$ git show
+```
+By supplying a SHA, the git log -p command will start at that commit! No need to scroll through everything! Keep in mind that it will also show all of the commits that were made prior to the supplied SHA
+The git show command will show only one commit. So don't get alarmed when you can't find any other commits - it only shows one. The output of the git show command is exactly the same as the git log -p command.
 
 #### Git ______ 
 The **____**  _____.
