@@ -96,6 +96,14 @@ This command:
 **the** <key>q</key> **key gets out of the git log view**. We're still using git log but are just passing a flag to change how the information is displayed. So the q key still works and returns the terminal to the command prompt.
 
 
+```
+$ git log --stat
+```
+This command:
+* displays the file(s) that have been modified
+* displays the number of lines that have been added/removed
+* displays a summary line with the total number of modified files and lines that have been added/removed
+
 
 #### Git ______ 
 The **____**  _____.
