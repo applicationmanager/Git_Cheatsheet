@@ -122,6 +122,18 @@ $ git show
 ```
 By supplying a SHA, the git log -p command will start at that commit! No need to scroll through everything! Keep in mind that it will also show all of the commits that were made prior to the supplied SHA
 The git show command will show only one commit. So don't get alarmed when you can't find any other commits - it only shows one. The output of the git show command is exactly the same as the git log -p command.
+<br/>
+<br/>
+<br/>
+#### Git Add
+The **git add**  command is used to move files from the Working Directory to the Staging Index..
+```
+$ git add  <file1> <file2> … <fileN>
+$ git add  .
+```
+This command:
+* takes a space-separated list of file names
+* alternatively, the period <kbd>.</kbd>  can be used in place of a list of files to tell Git to add the current directory (and all nested files)
 
 #### Git ______ 
 The **____**  _____.
