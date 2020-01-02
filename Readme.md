@@ -54,7 +54,11 @@ This command:
 * tell us about new files that have been created in the Working Directory that Git hasn't started tracking, yet
 * files that Git is tracking that have been modified
 * a whole bunch of other things that we'll be learning about throughout the rest of the course ;-)
-
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 #### Git log 
 The **git log**  By default, this command displays:the SHA, author, date and message of every commit in the repository
@@ -125,6 +129,8 @@ The git show command will show only one commit. So don't get alarmed when you ca
 <br/>
 <br/>
 <br/>
+<br/>
+<br/>
 #### Git Add
 The **git add**  command is used to move files from the Working Directory to the Staging Index..
 ```
@@ -134,6 +140,17 @@ $ git add  .
 This command:
 * takes a space-separated list of file names
 * alternatively, the period <kbd>.</kbd>  can be used in place of a list of files to tell Git to add the current directory (and all nested files)
+
+#### Git Commit
+The **git commit**  command takes files from the Staging Index and saves them in the repository.
+```
+$ git commit
+$ git commit -m "add your commit message here"
+```
+
+This command:
+* will open the code editor that is specified in your configuration
+* if you didn't use the -m flag then the terminal will show you the changes to add the meesage in first line. click on keyboard on escape button the ":wq" then enter button to commit
 
 #### Git ______ 
 The **____**  _____.
