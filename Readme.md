@@ -150,7 +150,7 @@ $ git commit -m "add your commit message here"
 
 This command:
 * will open the code editor that is specified in your configuration
-* if you didn't use the -m flag then the terminal will show you the changes to add the meesage in first line. click on keyboard on escape button the ":wq" then enter button to commit
+* if you didn't use the -m flag then the terminal will show you the changes to add the message in first line. click on keyboard on <kbd>ESC</kbd> button the <kbd>:</kbd><kbd>w</kbd><kbd>q</kbd> then click <kbd>↩</kbd> button to commit
 
 #### Git ______ 
 The **____**  _____.
