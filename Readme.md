@@ -152,6 +152,19 @@ This command:
 * will open the code editor that is specified in your configuration
 * if you didn't use the -m flag then the terminal will show you the changes to add the message in first line. click on keyboard on <kbd>ESC</kbd> button then <kbd>:</kbd><kbd>w</kbd><kbd>q</kbd> then click <kbd>↩</kbd> button to commit
 
+
+
+
+#### Git Diff
+The **git diff**  command is used to see changes that have been made but haven't been committed, yet:
+```
+$ git diff
+```
+This command:
+* the files that have been modified
+* the location of the lines that have been added/removed
+* the actual changes that have been made
+
 #### Git ______ 
 The **____**  _____.
 ```
