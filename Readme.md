@@ -165,6 +165,25 @@ This command:
 * the location of the lines that have been added/removed
 * the actual changes that have been made
 
+
+
+#### .gitignore File
+The **.gitignore**  file is used to tell Git about the files that Git should not track. This file should be placed in the same directory that the .git directory is in.<br/>
+* blank lines can be used for spacing
+* <kbd>#</kbd> - marks line as a comment
+* <kbd>* </kbd> - matches 0 or more characters
+* <kbd>?</kbd> - matches 1 character
+* <kbd>[abc]</kbd> - matches a, b, _or_ c
+* <kbd>**</kbd> - matches nested directories - <kbd>a/ **/z</kbd> matches<br/>
+    * a/z<br/>
+    * a/b/z<br/>
+    * a/b/c/z<br/>
+
+So if all of the 50 images are JPEG images in the "samples" folder, we could add the following line to .gitignore to have Git ignore all 50 images.
+```
+samples/*.jpg
+```
+
 #### Git ______ 
 The **____**  _____.
 ```
