@@ -174,7 +174,7 @@ The **.gitignore**  file is used to tell Git about the files that Git should not
 * <kbd>* </kbd> - matches 0 or more characters
 * <kbd>?</kbd> - matches 1 character
 * <kbd>[abc]</kbd> - matches a, b, _or_ c
-* <kbd>**</kbd> - matches nested directories - <kbd>a/ **/z</kbd> matches<br/>
+* <kbd>**</kbd> - matches nested directories - <kbd>a/****/z</kbd> matches<br/>
     * a/z<br/>
     * a/b/z<br/>
     * a/b/c/z<br/>
