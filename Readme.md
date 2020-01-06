@@ -199,19 +199,18 @@ CAREFUL: In the command above (git tag -a v1.0) the -a flag is used. This flag t
 * the date the tag was made
 * a message for the tag
 
-Because of this, you should always use annotated tags.
+Because of this, you should always use annotated tags.<br>
+A Git tag can be deleted with the -d flag (for delete!) and the name of the tag:
 
 ```
-$ git tag
-$ git tag --decorate
+$ git tag -d v1.0
 ```
-This command will display all tags that are in the repository and show us some details that are hidden from the default view.
-
+But what if you wanted to tag a commit that occurred farther back in the repo's history?All you have to do is provide the SHA of the commit you want to tag!
 
 ```
-
+$ git tag -a beta a87984
 ```
-This command will 
+This command will tag any commit in the entire git repository!
 
 
 
