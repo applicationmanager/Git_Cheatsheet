@@ -210,7 +210,14 @@ But what if you wanted to tag a commit that occurred farther back in the repo's 
 ```
 $ git tag -a beta a87984
 ```
-This command will tag any commit in the entire git repository!
+This command will tag any commit in the entire git repository!<br>
+
+You need to take the additional step of pushing your tags using the following command.
+
+```
+$ git push --tags <remote>
+```
+If you're pushing to your origin you can ignore the <remote> part.
 
 
 
