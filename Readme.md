@@ -174,7 +174,7 @@ The **.gitignore**  file is used to tell Git about the files that Git should not
 * <kbd>* </kbd> - matches 0 or more characters
 * <kbd>?</kbd> - matches 1 character
 * <kbd>[abc]</kbd> - matches a, b, _or_ c
-* <kbd>**</kbd> - matches nested directories - <kbd>a/****/z</kbd> matches<br/>
+* <kbd>**</kbd> - matches nested directories - <kbd>a/ **/z</kbd> matches<br/>
     * a/z<br/>
     * a/b/z<br/>
     * a/b/c/z<br/>
@@ -183,6 +183,37 @@ So if all of the 50 images are JPEG images in the "samples" folder, we could add
 ```
 samples/*.jpg
 ```
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+### Git Tag
+The **git tag**  This will open your code editor and wait for you to supply a message for the tag. 
+```
+$ git tag -a v1.0
+```
+CAREFUL: In the command above (git tag -a v1.0) the -a flag is used. This flag tells Git to create an annotated flag. If you don't provide the flag (i.e. git tag v1.0) then it'll create what's called a lightweight tag.<br/>Annotated tags are recommended because they include a lot of extra information such as:
+* the person who made the tag
+* the date the tag was made
+* a message for the tag
+
+Because of this, you should always use annotated tags.
+
+```
+$ git tag
+$ git tag --decorate
+```
+This command will display all tags that are in the repository and show us some details that are hidden from the default view.
+
+
+```
+
+```
+This command will 
+
+
 
 #### Git ______ 
 The **____**  _____.
