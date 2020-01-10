@@ -251,6 +251,13 @@ $ git branch -D {branch_name}   //campital D To force deletion
 ```
 
 
+if you created the branch locally and you want to upload it to github
+```
+git push --set-upstream origin sidebar
+```
+
+
+
 
 
 #### Git Checkout {branch_name}
