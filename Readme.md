@@ -234,10 +234,10 @@ This command:
 
 
 
-#### Git ______ 
-The **____**  _____.
+#### Git Branch {name}
+The **git branch {name}**  _____.
 ```
-$ git ______
+$ git branch {name}
 ```
 This command:
 * _____
