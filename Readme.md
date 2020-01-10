@@ -231,13 +231,44 @@ This command:
 * create new branches
 * delete branches
 
-
-
-
-#### Git Branch {name}
-The **git branch {name}**  _____.
+To create a branch, all you have to do is use git branch and provide it the name of the branch you want it to create. So if you want a branch called "sidebar" use: git branch sidebar
 ```
-$ git branch {name}
+$ git branch {branch_name}
+```
+
+
+To create a branch with name and have it point to the commit with SHA. So if you want a branch called "sidebar" and point to commit 42a69f use: git branch sidebar 42a69f
+```
+$ git branch {branch_name} {commit-sha}
+```
+
+
+
+to delete the branch, you'd use the -d flag. The command below includes the -d flag which tells Git to delete the provided branch
+```
+$ git branch -d {branch_name}
+$ git branch -D {branch_name}   //campital D To force deletion
+```
+
+
+
+
+#### Git Checkout {branch_name}
+The **____**  _____.
+```
+$ git checkout sidebar
+```
+This command:
+* _____
+* _____
+
+
+
+
+#### Git ______ 
+The **____**  _____.
+```
+$ git ______
 ```
 This command:
 * _____
