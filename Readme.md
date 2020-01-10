@@ -221,6 +221,19 @@ If you're pushing to your origin you can ignore the <remote> part.
 
 
 
+#### Git Branch
+The **git branch** command is used to interact with Git's branches:
+```
+$ git branch
+```
+This command:
+* list all branch names in the repository
+* create new branches
+* delete branches
+
+
+
+
 #### Git ______ 
 The **____**  _____.
 ```
