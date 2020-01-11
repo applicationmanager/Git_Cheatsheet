@@ -16,7 +16,8 @@ Heads up! We'll be using the following terminal commands in this lesson:
 ls - used to list files and directories                                   
 mkdir - used to create a new directory                                    
 cd - used to change directories                                           
-rm - used to remove files and directories                                 
+rm - used to remove files and directories     
+touch - create a file                            
 ```
 
 ## Create Course Directories
@@ -126,7 +127,12 @@ $ git show
 ```
 By supplying a SHA, the git log -p command will start at that commit! No need to scroll through everything! Keep in mind that it will also show all of the commits that were made prior to the supplied SHA
 The git show command will show only one commit. So don't get alarmed when you can't find any other commits - it only shows one. The output of the git show command is exactly the same as the git log -p command.
-<br/>
+
+```
+$ git log --oneline  --graph --all
+$ git log --oneline  --graph --all
+```
+The *--graph* flag adds the bullets and lines to the leftmost part of the output. This shows the actual branching that's happening. The *--all* flag is what displays all of the branches in the repository.<br/>
 <br/>
 <br/>
 <br/>
@@ -261,15 +267,19 @@ git push --set-upstream origin sidebar
 
 
 #### Git Checkout {branch_name}
-The **____**  _____.
+The **git checkout {branch_name}**  go into the repository and pull out all of the files and directories of the commit that the branch points to
 ```
-$ git checkout sidebar
+$ git checkout {branch_name}
 ```
 This command:
-* _____
-* _____
+* will remove all of the files that are referenced by commits in the master branch
+* will replace them with the files that are referenced by the commits in the sidebar branch
 
-
+```
+$ git checkout -b {branch_name}
+$ git checkout -b {branch_name} {parent_branch_name}
+```
+the git checkout command can actually create a new branch, too? If you provide the -b flag, you can create a branch and switch to it all in one command.
 
 
 #### Git ______ 
