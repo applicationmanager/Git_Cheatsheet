@@ -282,6 +282,19 @@ $ git checkout -b {branch_name} {parent_branch_name}
 the git checkout command can actually create a new branch, too? If you provide the -b flag, you can create a branch and switch to it all in one command.
 
 
+#### Git Merge
+The **git merge {name_of_branch_to_merge_in}** command is used to combine Git branches:
+```
+$ git merge {name_of_branch_to_merge_in}
+```
+When a merge happens, Git will:
+* look at the branches that it's going to merge
+* look back along the branch's history to find a single commit that both branches have in their commit history
+* combine the lines of code that were changed on the separate branches together
+* makes a commit to record the merge
+
+
+
 #### Git ______ 
 The **____**  _____.
 ```
@@ -290,3 +303,7 @@ $ git ______
 This command:
 * _____
 * _____
+
+
+
+
