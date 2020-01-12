@@ -293,6 +293,13 @@ When a merge happens, Git will:
 * combine the lines of code that were changed on the separate branches together
 * makes a commit to record the merge
 
+There are two types of merges:
+* Fast-forward merge – the branch being merged in must be ahead of the checked out branch. The checked out branch's pointer will just be moved forward to point to the same commit as the other branch.
+* the regular type of merge
+    * two divergent branches are combined
+    * a merge commit is created
+
+
 
 
 #### Git ______ 
@@ -304,6 +311,12 @@ This command:
 * _____
 * _____
 
+
+if you make a merge on the wrong branch, use this command to undo the merge:
+```
+$ git reset --hard HEAD^
+```
+(Make sure to include the ^ character! It's a known as a "Relative Commit Reference" and indicates "the parent commit". We'll look at Relative Commit References in the next lesson.)
 
 
 
