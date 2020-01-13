@@ -299,7 +299,16 @@ There are two types of merges:
     * a merge commit is created
 
 
+#### Merge Conflict Recap
+A merge conflict happens when the same line or lines have been changed on different branches that are being merged. Git will pause mid-merge telling you that there is a conflict and will tell you in what file or files the conflict occurred. To resolve the conflict in a file:
 
+* locate and remove all lines with merge conflict indicators
+* determine what to keep
+* save the file(s)
+* stage the file(s)
+* make a commit
+
+Be careful that a file might have merge conflicts in multiple parts of the file, so make sure you check the entire file for merge conflict indicators - a quick search for <<< should help you locate all of them.
 
 #### Git ______ 
 The **____**  _____.
