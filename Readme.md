@@ -130,7 +130,6 @@ The git show command will show only one commit. So don't get alarmed when you ca
 
 ```
 $ git log --oneline  --graph --all
-$ git log --oneline  --graph --all
 ```
 The *--graph* flag adds the bullets and lines to the leftmost part of the output. This shows the actual branching that's happening. The *--all* flag is what displays all of the branches in the repository.<br/>
 <br/>
