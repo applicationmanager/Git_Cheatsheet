@@ -2,6 +2,8 @@
 
 This repo is just a git commands note (doesn't contain everything about git)
 * This Readme file contains the general command.
+* [markdown cheatsheet](https://github.com/applicationmanager/Git_Cheatsheet/blob/master/markdown_cheatsheet.md "hover link description") some notes to help writing these Github markdown pages <br/>
+*
 
 ## Getting Started
 
