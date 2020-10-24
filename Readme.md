@@ -1,6 +1,7 @@
 # Git ChaetSheet
 
-follow up with the udacity project "Version Control with GitHub" I created this repository
+This repo is just a git commands note (doesn't contain everything about git)
+* This Readme file contains the general command.
 
 ## Getting Started
 
