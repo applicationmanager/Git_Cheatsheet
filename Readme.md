@@ -333,17 +333,6 @@ Be careful that a file might have merge conflicts in multiple parts of the file,
 # Undoing Changes
 
 #### Git commit --amend
-The **____**  _____.
-```
-$ git ______
-```
-This command:
-* _____
-* _____
-
-
-
-#### Git ______
 The **git commit --amend**  will let you include files (or changes to files) you might've forgotten to include. Let's say you've updated the color of all navigation links across your entire website. You committed that change and thought you were done. But then you discovered that a special nav link buried deep on a page doesn't have the new color. You could just make a new commit that updates the color for that one link, but that would have two back-to-back commits that do practically the exact same thing (change link colors).<br>
 Instead, you can amend the last commit (the one that updated the color of all of the other links) to include this forgotten one. To do get the forgotten link included, just:
 * edit the file(s)
@@ -353,9 +342,7 @@ Instead, you can amend the last commit (the one that updated the color of all of
 ```
 $ git commit --amend
 ```
-This command:
-* _____
-* _____
+
 
 
 if you make a merge on the wrong branch, use this command to undo the merge:
@@ -363,6 +350,18 @@ if you make a merge on the wrong branch, use this command to undo the merge:
 $ git reset --hard HEAD^
 ```
 (Make sure to include the ^ character! It's a known as a "Relative Commit Reference" and indicates "the parent commit". We'll look at Relative Commit References in the next lesson.)
+
+
+
+#### Git ______
+The **____**  _____.
+```
+$ git ______
+```
+This command:
+* _____
+* _____
+
 
 
 
