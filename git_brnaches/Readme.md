@@ -85,5 +85,22 @@ pick commit -amend
 git rebase -continue                   
 ```
 now the git will continue the rebase process after adding the changing to the first commit.
+<br>
+#### Rebase - reword
+This lets you change the commit message only
+```
+reword 1285e6c starting f1                         
+reword 985d1e1 completed f1                      
+```
+after saving this file, git will open a new file for every "reword" labeled commit to enter a different message.
+<br>
+#### Rebase - drop
+This lets you delete a commit
+```
+drop 1285e6c starting f1                         
+pick 985d1e1 completed f1                      
+```
+
+
 
 
