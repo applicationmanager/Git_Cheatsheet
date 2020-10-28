@@ -50,8 +50,9 @@ start the rebase from the commit sha
 ```
 $ git rebase -i <commit-sha>                    
 ```
-#### Rebase - Squash
+<br>
 
+#### Rebase - Squash
 Squash the commits you want to combine into a single commit (keep first line as "pick" and change the other lines to "squash to squash everything in one commit)
 ```
 pick 1285e6c starting f1                     
@@ -60,6 +61,14 @@ squash 985d1e1 completed f1
 ```
 then you have to choose the commit message you want to use for these three commit as one commit message
 then save the changes and exit
-
+<br>
+#### Rebase - fixup
+combine one commit with another but keep the commit message of one of them
+```
+pick 1285e6c starting f2                    
+fixup b714e68 more work in f2                     
+pick 985d1e1 completed f1                      
+```
+Note: fixup will merge the commit with the commit above it. so make sure to reorder them in the way you want before proceeding
 
 
