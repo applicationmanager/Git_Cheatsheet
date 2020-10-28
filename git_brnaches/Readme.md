@@ -70,5 +70,20 @@ fixup b714e68 more work in f2
 pick 985d1e1 completed f1                      
 ```
 Note: fixup will merge the commit with the commit above it. so make sure to reorder them in the way you want before proceeding
+<br>
+#### Rebase - edit
+we can add more changes to an already existing commit.
+```
+edit 1285e6c starting f2                           
+pick 985d1e1 completed f1                      
+```
+now when you save the file, the commit will pause on SHA 1285e6c and will allow you to change anything in the code you want
+when you finish editing you should follow the below steps
+```
+git add .                           
+pick commit -amend
+git rebase -continue                   
+```
+now the git will continue the rebase process after adding the changing to the first commit.
 
 
