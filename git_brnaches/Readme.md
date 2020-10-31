@@ -125,3 +125,17 @@ it is very easy to make. just find the target commit SHA from other branch then
 ```
 git cherry-pick <target-SHA>                                         
 ```
+
+# Git Remote
+pull code and setup local branch
+```
+git clone <remote-url>                                      
+```
+"Origin" is the default name for remote server. but you want to change it then user
+```
+git remote add <name> <remote-url>                                      
+```
+to see a list of the remotes the URLs
+```
+git remote -v                                     
+```
