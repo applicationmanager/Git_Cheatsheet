@@ -318,7 +318,7 @@ A merge conflict happens when the same line or lines have been changed on differ
 
 Be careful that a file might have merge conflicts in multiple parts of the file, so make sure you check the entire file for merge conflict indicators - a quick search for <<< should help you locate all of them.
 
-
+comm
 <br/>
 <br/>
 <br/>

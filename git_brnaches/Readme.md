@@ -100,7 +100,28 @@ This lets you delete a commit
 drop 1285e6c starting f1                         
 pick 985d1e1 completed f1                      
 ```
+#### Rebase - Solving conflict
+when rebase face conflict then it will pause until you solve that conflict.
+follow these steps to solve the conflict
+* find the file changed because of the conflict
+```
+git diff                                         
+```
+then go to these file and fix the conflict then stage these files again by calling
+```
+git add .                                         
+```
+then continue the rebase by calling
+```
+git rebase --continue                                         
+```
+<br>
+<br>
 
-
-
-
+## Cherry Pick
+git cherry-pick append any commit to the current working head you are working on.
+It is an advanced feature. it copies (duplicate) the commit from one branch. not moving it. (it could case confusion when merge)
+it is very easy to make. just find the target commit SHA from other branch then
+```
+git cherry-pick <target-SHA>                                         
+```
