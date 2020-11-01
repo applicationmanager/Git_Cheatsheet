@@ -243,6 +243,11 @@ This command:
 * list all branch names in the repository
 * create new branches
 * delete branches
+and in order to use -a to see all the branches including the remote branch.
+```
+$ git branch -a
+```
+
 
 To create a branch, all you have to do is use git branch and provide it the name of the branch you want it to create. So if you want a branch called "sidebar" use: git branch sidebar
 ```
