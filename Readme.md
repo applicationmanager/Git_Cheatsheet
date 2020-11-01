@@ -1,6 +1,10 @@
 # Git ChaetSheet
 
-follow up with the udacity project "Version Control with GitHub" I created this repository
+This repo is just a git commands note (doesn't contain everything about git)
+* This Readme file contains the general command.
+* [Git Branches](https://github.com/applicationmanager/Git_Cheatsheet/tree/master/git_brnaches "details on branches and what the needed commands") what you should know about branches in git <br/>
+* [markdown cheatsheet](https://github.com/applicationmanager/Git_Cheatsheet/blob/master/markdown_cheatsheet.md "Another MD file describing some usefull notes to you help you writing these Readme pages") some notes to help writing these Github markdown pages <br/>
+
 
 ## Getting Started
 
@@ -151,13 +155,17 @@ The **git commit**  command takes files from the Staging Index and saves them in
 ```
 $ git commit
 $ git commit -m "add your commit message here"
+$ git commit -a -m "add your commit message here"
 ```
 
 This command:
 * will open the code editor that is specified in your configuration
 * if you didn't use the -m flag then the terminal will show you the changes to add the message in first line. click on keyboard on <kbd>ESC</kbd> button then <kbd>:</kbd><kbd>w</kbd><kbd>q</kbd> then click <kbd>↩</kbd> button to commit
-
-
+* you can use -a flag if you didn't stage all the changed file. git will do it for (no need for 'git add .')
+```
+$ git commit --amend
+```
+This command will allow you to add the newly staged file to the last commit without creating a new commit (you can also edit the commit message)
 
 
 #### Git Diff
@@ -310,7 +318,7 @@ A merge conflict happens when the same line or lines have been changed on differ
 
 Be careful that a file might have merge conflicts in multiple parts of the file, so make sure you check the entire file for merge conflict indicators - a quick search for <<< should help you locate all of them.
 
-
+comm
 <br/>
 <br/>
 <br/>
@@ -325,17 +333,6 @@ Be careful that a file might have merge conflicts in multiple parts of the file,
 # Undoing Changes
 
 #### Git commit --amend
-The **____**  _____.
-```
-$ git ______
-```
-This command:
-* _____
-* _____
-
-
-
-#### Git ______
 The **git commit --amend**  will let you include files (or changes to files) you might've forgotten to include. Let's say you've updated the color of all navigation links across your entire website. You committed that change and thought you were done. But then you discovered that a special nav link buried deep on a page doesn't have the new color. You could just make a new commit that updates the color for that one link, but that would have two back-to-back commits that do practically the exact same thing (change link colors).<br>
 Instead, you can amend the last commit (the one that updated the color of all of the other links) to include this forgotten one. To do get the forgotten link included, just:
 * edit the file(s)
@@ -345,9 +342,7 @@ Instead, you can amend the last commit (the one that updated the color of all of
 ```
 $ git commit --amend
 ```
-This command:
-* _____
-* _____
+
 
 
 if you make a merge on the wrong branch, use this command to undo the merge:
@@ -358,4 +353,22 @@ $ git reset --hard HEAD^
 
 
 
+<<<<<<< HEAD
 test
+||||||| merged common ancestors
+
+=======
+#### Git ______
+The **____**  _____.
+```
+$ git ______
+```
+This command:
+* _____
+* _____
+
+
+
+
+
+>>>>>>> ef3a29f13b8463bd8bfe147daba49ceb566d07db
