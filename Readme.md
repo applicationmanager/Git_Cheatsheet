@@ -174,11 +174,38 @@ The **git diff**  command is used to see changes that have been made but haven't
 $ git diff
 ```
 This command:
-* the files that have been modified
+* the files that have been modified (not staged changes)
 * the location of the lines that have been added/removed
 * the actual changes that have been made
+```
+$ git diff --chached
+```
+use --cached if you want to see the staged changes ready to be committed. (after calling "git add .")
+```
+$ git diff HEAD
+```
+use "HEAD" if you want to see both staged and non staged changes between current code state and last commit. (will show you what will be committed if you call "git commit -a")
+```
+$ git diff <Commit-SHA>
+```
+use <Commit-SHA> if you want to see both staged and non staged changes between current code state and specific commit.
+```
+$ git diff --cached <Commit-SHA>
+```
+use <Commit-SHA> if you want to see only staged changes between current staged code and specific commit.
+```
+$ git diff <Commit-SHA> <Commit-SHA>
+```
+use two <Commit-SHA> if you want to see changes between any two different commits.
+```
+$ git diff -w
+```
+use "-w" to ignore the white spaces and new lines changes<br>
+Check [here](https://github.com/applicationmanager/Git_Cheatsheet/blob/master/markdown_cheatsheet.md "more git diff commands") to read more about git diff in branching <br/>
 
-
+<br/>
+<br/>
+<br/>
 
 #### .gitignore File
 The **.gitignore**  file is used to tell Git about the files that Git should not track. This file should be placed in the same directory that the .git directory is in.<br/>
@@ -192,9 +219,23 @@ The **.gitignore**  file is used to tell Git about the files that Git should not
     * a/b/z<br/>
     * a/b/c/z<br/>
 
-So if all of the 50 images are JPEG images in the "samples" folder, we could add the following line to .gitignore to have Git ignore all 50 images.
+So if all the 50 images are JPEG images in the "samples" folder, we could add the following line to .gitignore to have Git ignore all 50 images.
 ```
 samples/*.jpg
+```
+To delete a file from your repository (but keep it in your local file system)
+```
+git rm --cached <filename>
+```
+To delete a file from your repository and from your local file system.
+```
+git rm <filename>
+```
+<br>
+ALSO YOU CAN USE ".git/info/exculde" file if you want to ignore files just in your device.
+
+```
+git rm <filename>
 ```
 <br/>
 <br/>
@@ -327,14 +368,12 @@ A merge conflict happens when the same line or lines have been changed on differ
 * stage the file(s)
 * make a commit
 
-Be careful that a file might have merge conflicts in multiple parts of the file, so make sure you check the entire file for merge conflict indicators - a quick search for <<< should help you locate all of them.
+Be careful. A file might have merge conflicts in multiple parts of the file, so make sure you check the entire file for merge conflict indicators - a quick search for <<< should help you locate all of them.
 
-comm
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+use --abort if you think you will not be able to solve the conflict now. this will revert the working directory back to what it was before making the commit 
+```
+$ git merge --abort
+```
 <br/>
 <br/>
 <br/>

@@ -125,6 +125,7 @@ it is very easy to make. just find the target commit SHA from other branch then
 ```
 git cherry-pick <target-SHA>                                         
 ```
+<br>
 
 # Git Remote
 pull code and setup local branch
@@ -138,4 +139,25 @@ git remote add <name> <remote-url>
 to see a list of the remotes the URLs
 ```
 git remote -v                                     
+```
+<br>
+
+# Git Diff
+To see difference between tips of branches
+```
+git diff <branch-name1>  <branch-name2>
+git diff feature123 master                                      
+```
+To see difference between tips of branches in one file 
+```
+git diff <branch-name1>  <branch-name2> <file-anme>
+git diff feature123 master file1.txt                                      
+```
+
+<br>
+to see changes in only one branch since the other branch was separated from it
+
+```
+git diff <branch-name1>...<branch-name2>
+git diff feature123...master                                      
 ```
