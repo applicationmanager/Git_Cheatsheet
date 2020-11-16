@@ -188,3 +188,10 @@ git reset --hard HEAD
 ```
 call this when you want to delete all your changes in the working area and in the index and be on status as the repository.
 Using the HEAD instead of <commit-SHA> will keep the repository on the same commit and not move the branch to different commit.
+
+
+<br><br>
+  
+
+# Git Stash
+Use it when you want to record the current state of the working directory and the index, but want to go back to a clean working directory.The command saves your local modifications away and reverts the working directory to match the HEAD commit.
