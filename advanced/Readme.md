@@ -22,3 +22,6 @@ Deletes files from both the working area and the index. it doesn't touch the rep
 ```
 $ git mv  
 ```
+move a file in the working area and also update the index. it doesn't touch the repository.
+
+
