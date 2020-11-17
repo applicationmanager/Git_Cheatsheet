@@ -195,3 +195,19 @@ Using the HEAD instead of <commit-SHA> will keep the repository on the same comm
 
 # Git Stash
 Use it when you want to record the current state of the working directory and the index, but want to go back to a clean working directory.The command saves your local modifications away and reverts the working directory to match the HEAD commit.
+```
+git stash --include-untracked               
+```
+--include-untracked means that also stash files that are still untracked, that have never been added, files that are entirely new in the working area
+```
+git stash list               
+```
+show a list of all the stashes you have made
+```
+git stash apply               
+```
+apply the changes from the latest stash to the working area and index. you can provide the name of the stash if you don't want to unstash the lhe latest one.
+
+
+
+
