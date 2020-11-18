@@ -22,6 +22,41 @@ Deletes files from both the working area and the index. it doesn't touch the rep
 ```
 $ git mv  
 ```
-move a file in the working area and also update the index. it doesn't touch the repository.
+move a file in the working area and also update the index. it doesn't touch the repository.<br><br><br><br>
 
+### tip 1
+if you want to reset only one file from the repository to the index without changing this file in the working area.
+```
+$ git reset HEAD <file-name>
+```
+As you can see we didn't add any flag to the command so it is by default --Mixed<br>
+But this command doesn't work if we want to only reset one file to the working are. --HARD is not working for one file,
+instead you can use the checkout command instead 
+```
+$ git checkout HEAD <file-name>
+```
+This command will move one file from repository to both index and working area.<br><br><br><br>
 
+### tip 2
+if you want to commit only part of the file changes (not all of them) then you can use this command
+```
+$ git add --patch  <file-name>  
+$ git add -p  <file-name>  
+```
+git will look into these changes in the file and divid them into sections called hunks. and give you a list of options [y,n,q,a,d,s,e,?] and if you want to see what these option are then press the ? button<br>
+important options: <br>
+y: stage this hunk <br>
+n: don't stage this hunk <br>
+s: split into smaller hunks<br><br><br><br>
+
+### tip 3
+we have two new commands already exist inside the git checkout command.
+```
+$ git switch
+$ git restore
+```
+but git switch works for switching between branches and git restore works on between commits in same branch. Please read more about these two commands.
+```
+$ git restore --staged <file-name> 
+```
+also used to copy the file from the repository to the index (un-staging file)<br><br><br><br>
