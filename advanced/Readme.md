@@ -80,3 +80,4 @@ if the second parent Head~2 has two merged parents then you don't need to type H
 $ git show HEAD@{"1 month ago"}
 ```
 use the above if you just want to know where this branch was one month ago
+
