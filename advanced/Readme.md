@@ -59,4 +59,24 @@ but git switch works for switching between branches and git restore works on bet
 ```
 $ git restore --staged <file-name> 
 ```
-also used to copy the file from the repository to the index (un-staging file)<br><br><br>
+also used to copy the file from the repository to the index (un-staging file)<br><br><br><br>
+
+### tip 4 History
+below command to see details about the latest commit
+```
+$ git show <latst-commit-SHA>
+$ git show HEAD
+$ git show <branch-Name>
+```
+below command to see details about parent commit of the current commit
+```
+$ git show <parent-commit-SHA>
+$ git show HEAD^
+$ git show HEAD~1
+```
+use HEAD and then add to it the number of parent level you want to check or just add "~" and number of levers <br> ex:Head^^^  or Head~3<br>
+if the second parent Head~2 has two merged parents then you don't need to type HEAD^3, you will need to use HEAD~2~1 or HEAD~2~2
+```
+$ git show HEAD@{"1 month ago"}
+```
+use the above if you just want to know where this branch was one month ago

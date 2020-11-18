@@ -65,6 +65,12 @@ This command:
 <br/>
 <br/>
 
+#### Git blame 
+The **git blame <file-name>**  show you the history of every line in the file
+```
+$ git blame <file-name>
+```
+
 #### Git log 
 The **git log**  By default, this command displays:the SHA, author, date and message of every commit in the repository
 ```
