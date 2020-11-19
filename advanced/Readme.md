@@ -80,4 +80,25 @@ if the second parent Head~2 has two merged parents then you don't need to type H
 ```
 $ git show HEAD@{"1 month ago"}
 ```
-use the above if you just want to know where this branch was one month ago
+use the above if you just want to know where this branch was one month ago<br><br><br><br>
+
+
+### tip 5 reflog
+if you lost the link any commit, or you deleted a commit and you need to know its hash then you can call
+```
+$ git reflog HEAD
+```
+and if you want to know the history of everything happened to the branch
+ ```
+ $ git reflog refs/heads/master
+ ``` 
+<br><br><br><br>
+
+
+### tip 6 filter-repo
+if you want to remove one file from all the history of the repo then use this command
+```
+$ git filter-repo --path <file-name> --invert-paths
+```
+this will loop over all the commits in side our repository and remove anything related to this file.
+if you didn't use --invert-path then it means it will delete all the file except this file.
