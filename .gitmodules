@@ -1,0 +1,3 @@
+[submodule "external/repo1"]
+	path = external/repo1
+	url = https://github.com/applicationmanager/crispy-succotash.git
