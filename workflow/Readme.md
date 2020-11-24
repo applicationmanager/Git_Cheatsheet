@@ -25,3 +25,5 @@ Script that executes on the Git server on specific Git events
     * Enforcing the signing of tags and commits
     * Blocking access for specific IP address
     * Blocking specific file extensions
+    
+![Git Hooks Status](https://github.com/applicationmanager/Git_Cheatsheet/blob/master/hooks.png)
