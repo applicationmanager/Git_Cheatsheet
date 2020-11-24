@@ -1,5 +1,5 @@
-#Git Submodules
-##Adding submodules
+# Git Submodules
+## Adding submodules
 connects the submodules's git repository to our current repository<br>
 \# Add a submodule to the repo in the 'external/repo1' directory (Single line command)
 ```
@@ -12,7 +12,7 @@ then the git will create a file .gitsubmodules file directly when we add a new s
 	url = https://github.com/applicationmanager/crispy-succotash.git          
 ```
 <br><br><br>
-##Cloning a Repository with Submodules
+## Cloning a Repository with Submodules
 Properly initializing the repository to pull down the referenced submodules<br>
 \# Clone the repository
 ```
@@ -27,7 +27,7 @@ git submodule init
 git submodule update   
 ```
 <br><br><br>
-##Removing a Submodule from a Repository
+## Removing a Submodule from a Repository
 Following the steps to remove all references to the submodule<br>
 \# Temporarily remove the repository (can be initialized again)
 ```
@@ -41,25 +41,25 @@ $ git commit -m "Removed project submodule repo1"
 ```
 
 
-##Tip1 
+## Tip1 
 To get more information to got more status when we working with submodules
 ```
 $ git config --global status.submoduleSummary true                                        
 ```
 <br>
 
-##Tip2
+## Tip2
 to get summaries about submodule changes when we want to see diff in repo contains submodule
 ```
 $ git config --global diff.submodule log                                        
 ```
 
-##Tip3
+## Tip3
 To clone a repo that contains too many levels of nested submodules
 ```
 $ git clone --recursive https://github.com/applicationmanager/crispy-succotash.git                              
 ```
-##Tip4
+## Tip4
 To see the submodules in your rep
 ```
 $ cat .gitmodules                              
@@ -69,7 +69,7 @@ To see the submodules for every nested submodules
 $ git submodule foreach 'cat .gitmodules '                          
 ```
 
-##Tip5
+## Tip5
 maybe after you pull some update on your repo from different team
 ```
 $ git pull                             
@@ -82,7 +82,7 @@ if there is any new submodule and changes in old submodules configuration, then 
 ```
 $ git submodule update --init --recursive                           
 ```
-##Tip6
+## Tip6
 To make the push function in your repo pushes any commit in the child submodules that have not been pushed
 ```
 $ git config --global push.recursveSubmodules on-demand                          

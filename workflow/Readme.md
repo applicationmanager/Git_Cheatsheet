@@ -1,7 +1,7 @@
 # Git Hook
 A pre-defined script that is executed in response to a specific action that has occurred within your git repository
 
-###Client-side hook
+### Client-side hook
 Script that executes on the client machine on specific Git events
 * Designed to improve workflow for developers using repository
 * Can't enforce policies as local repository can be reconfigured 
@@ -13,7 +13,7 @@ Script that executes on the client machine on specific Git events
     * Cleaning up files after specific actions
 
 
-###Server-side hook
+### Server-side hook
 Script that executes on the Git server on specific Git events
 * Can enforce team policies.
     * For rejecting pushes based on overall policies, use pre-receive 
