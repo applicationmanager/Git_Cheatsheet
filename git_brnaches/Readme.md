@@ -161,3 +161,53 @@ to see changes in only one branch since the other branch was separated from it
 git diff <branch-name1>...<branch-name2>
 git diff feature123...master                                      
 ```
+
+
+<br>
+
+# Git Reset
+Move the branch to different commit
+```
+git reset --hard                                 
+```
+after rebase it copy the data from the new current commit to both working area and index.
+
+```
+git reset --mixed                                 
+```
+after rebase it copy the data from the new current commit to the index but leaves the current area alone. this is the default one.
+
+```
+git reset --soft                                 
+```
+after rebase it doesn't do anything to the working area and to the index. it just move the repository branch to the target commit
+
+Example
+```
+git reset --hard HEAD                            
+```
+call this when you want to delete all your changes in the working area and in the index and be on status as the repository.
+Using the HEAD instead of <commit-SHA> will keep the repository on the same commit and not move the branch to different commit.
+
+
+<br><br>
+  
+
+# Git Stash
+Use it when you want to record the current state of the working directory and the index, but want to go back to a clean working directory.The command saves your local modifications away and reverts the working directory to match the HEAD commit.
+```
+git stash --include-untracked               
+```
+--include-untracked means that also stash files that are still untracked, that have never been added, files that are entirely new in the working area
+```
+git stash list               
+```
+show a list of all the stashes you have made
+```
+git stash apply               
+```
+apply the changes from the latest stash to the working area and index. you can provide the name of the stash if you don't want to unstash the lhe latest one.
+
+
+
+

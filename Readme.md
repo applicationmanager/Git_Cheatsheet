@@ -65,6 +65,12 @@ This command:
 <br/>
 <br/>
 
+#### Git blame 
+The **git blame <file-name>**  show you the history of every line in the file
+```
+$ git blame <file-name>
+```
+
 #### Git log 
 The **git log**  By default, this command displays:the SHA, author, date and message of every commit in the repository
 ```
@@ -136,7 +142,19 @@ The git show command will show only one commit. So don't get alarmed when you ca
 $ git log --oneline  --graph --all
 ```
 The *--graph* flag adds the bullets and lines to the leftmost part of the output. This shows the actual branching that's happening. The *--all* flag is what displays all of the branches in the repository.<br/>
-<br/>
+
+```
+$ git log -4
+```
+show me only latest four commits<br/>
+```
+$ git log HEAD~5..HEAD^
+```
+show me 5 commit before head to the parent of this head
+```
+$ git log newBranch..master
+```
+show me all the new commit from newBranch to master
 <br/>
 <br/>
 <br/>
