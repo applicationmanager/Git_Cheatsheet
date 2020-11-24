@@ -1,0 +1,20 @@
+#Auto-detect text files and set line endings.and
+* text=auto
+.gitattributes !filter !diff
+
+#diffine a git attributes for jpeg files in our repository telling them to use the exif strategy to performing diff
+* jpeg diff=exif
+
+
+#Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+
+#Got LFS files
+*.zip filter=lfs diff=lfs merge=lfs -text
+
+#Remove tests from export (when user download the code from release tag, this folder will not be there)
+.* export-ignore
+tests export-ignore
+tests/*.* export-ignore
