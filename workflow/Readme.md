@@ -1,4 +1,4 @@
-#Git Hook
+# Git Hook
 A pre-defined script that is executed in response to a specific action that has occurred within your git repository
 
 ###Client-side hook
