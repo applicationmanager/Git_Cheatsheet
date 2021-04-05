@@ -11,10 +11,13 @@
 *.jpg binary
 *.jpeg binary
 
+
 #Got LFS files
 *.zip filter=lfs diff=lfs merge=lfs -text
+
 
 #Remove tests from export (when user download the code from release tag, this folder will not be there)
 .* export-ignore
 tests export-ignore
 tests/*.* export-ignore
+
